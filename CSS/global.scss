@@ -1,0 +1,88 @@
+$background: #00041C;
+$gold: #FFCE00;
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+input{
+    &:focus{
+        outline: none;
+    }
+}
+
+button{
+    &:focus{
+        outline: none;
+    }
+}
+
+*{
+    font-family: Raleway, sans-serif;
+    color: white;
+}
+
+body{
+    background-color: $background;
+}
+
+
+#wolf{
+    transform: scale(1.8);
+    .wolf-poly{
+        transition: 0.1s ease;
+    }
+}
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar{
+    height: 5vw;
+    width: 98vw;
+    position: absolute;
+    top: 0;
+    left: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .bubble{
+        height: 5vw;
+        display: flex;
+        align-items: center;
+        svg{
+            height: 40%;
+            width: auto;
+            fill: white;
+            transition: 0.2s ease;
+            &:hover{
+                fill: $gold;
+            }
+        }
+
+        h1{
+            font-size: 1.5vw;
+            font-weight: 600;
+            margin: 1vw;
+            transition: 0.2s ease;
+            &:hover{
+                color: $gold;
+            }
+        }
+    }
+}
+
+#logo-mobile{
+    display: none;
+}

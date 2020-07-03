@@ -1,0 +1,105 @@
+a {
+  color: white;
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+* {
+  font-family: Raleway, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #00041C;
+}
+
+#wolf {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+#wolf .wolf-poly {
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#navbar {
+  height: 5vw;
+  width: 98vw;
+  position: absolute;
+  top: 0;
+  left: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar .bubble {
+  height: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar .bubble svg {
+  height: 40%;
+  width: auto;
+  fill: white;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+#navbar .bubble svg:hover {
+  fill: #FFCE00;
+}
+
+#navbar .bubble h1 {
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin: 1vw;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+#navbar .bubble h1:hover {
+  color: #FFCE00;
+}
+
+#logo-mobile {
+  display: none;
+}
+/*# sourceMappingURL=global.css.map */
