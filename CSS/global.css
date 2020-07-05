@@ -7,6 +7,10 @@ input:focus {
   outline: none;
 }
 
+textarea:focus {
+  outline: none;
+}
+
 button:focus {
   outline: none;
 }
@@ -16,90 +20,285 @@ button:focus {
   color: white;
 }
 
-body {
-  background-color: #00041C;
+@media screen and (min-width: 800px) {
+  body {
+    background-color: #00041C;
+  }
+  #wolf {
+    width: 80vw;
+    height: 80vh;
+  }
+  #wolf .wolf-poly {
+    -webkit-transition: 0.1s ease;
+    transition: 0.1s ease;
+  }
+  #wolf.widescreen {
+    width: 95vw;
+    height: 95vh;
+  }
+  .background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #navbar {
+    height: 5vw;
+    width: 100vw;
+    position: fixed;
+    background-color: #00041C;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #navbar .bubble {
+    height: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  #navbar .bubble svg {
+    height: 40%;
+    width: auto;
+    fill: white;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  #navbar .bubble svg:hover {
+    fill: #FFCE00;
+  }
+  #navbar .bubble h1 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin: 1vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  #navbar .bubble h1:hover {
+    color: #FFCE00;
+  }
+  #dark {
+    display: none;
+  }
+  #logo-mobile {
+    display: none;
+  }
 }
 
-#wolf {
-  -webkit-transform: scale(1.8);
-          transform: scale(1.8);
-}
-
-#wolf .wolf-poly {
-  -webkit-transition: 0.1s ease;
-  transition: 0.1s ease;
-}
-
-.background {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#navbar {
-  height: 5vw;
-  width: 98vw;
-  position: absolute;
-  top: 0;
-  left: 1vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#navbar .bubble {
-  height: 5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#navbar .bubble svg {
-  height: 40%;
-  width: auto;
-  fill: white;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-}
-
-#navbar .bubble svg:hover {
-  fill: #FFCE00;
-}
-
-#navbar .bubble h1 {
-  font-size: 1.5vw;
-  font-weight: 600;
-  margin: 1vw;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-}
-
-#navbar .bubble h1:hover {
-  color: #FFCE00;
-}
-
-#logo-mobile {
-  display: none;
+@media screen and (max-width: 800px) {
+  body {
+    background-color: #00041C;
+  }
+  #wolf {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  #wolf .wolf-poly {
+    -webkit-transition: 0.1s ease;
+    transition: 0.1s ease;
+  }
+  .background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #navbar {
+    height: 100vh;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40vw;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    background-color: #111a35;
+    -webkit-box-shadow: -10px 0px 50px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: -10px 0px 50px 10px rgba(0, 0, 0, 0.4);
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  #navbar .bubble {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #navbar .bubble svg {
+    width: 35vw;
+    height: 15vw;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    fill: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 0;
+    left: -3vw;
+  }
+  #navbar .navbtn {
+    margin: 1vw;
+    padding: 2vw;
+    text-align: right;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #navbar .navbtn h1 {
+    font-size: 5vw;
+    font-weight: 600;
+    margin: 1vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  #navbar .navbtn h1:hover {
+    color: #FFCE00;
+  }
+  #navbar.dorm {
+    right: -40vw;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #dark {
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  #dark.dorm {
+    visibility: hidden;
+    opacity: 0;
+  }
+  #navfab {
+    width: 18vw;
+    height: 18vw;
+    background-color: #2A4182;
+    border-radius: 10vw;
+    position: fixed;
+    bottom: 6vw;
+    right: 6vw;
+    z-index: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  #navfab div {
+    width: 11vw;
+    height: 1.5vw;
+    margin: 0.9vw;
+    border-radius: 0.5vw;
+    background-color: #c0cbeb;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  #navfab.dorm {
+    visibility: hidden;
+    opacity: 0;
+  }
+  #navfab:hover {
+    background-color: #24376f;
+  }
+  #navfab:hover div {
+    background-color: #e7ebf7;
+  }
+  #logo-mobile {
+    display: block;
+    width: 50vw;
+    height: 30vw;
+    left: 25vw;
+    top: 0vw;
+    position: fixed;
+    z-index: -6;
+    opacity: 1;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    visibility: visible;
+  }
+  #logo-mobile svg {
+    width: 100%;
+    height: 100%;
+    stroke-width: 5px;
+    fill: white;
+  }
+  #logo-mobile.dorm {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=global.css.map */

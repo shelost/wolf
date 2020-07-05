@@ -1,132 +1,257 @@
 $blue: #0074FF;
 
-body{
-    height: 500vh;
-}
 
 #navbar{
     position: fixed;
 }
-.animation{
-    height: 90vh;
-    width: 90vh;
-    position: absolute;
-    top: -2vw;
-    right: 3vw;
-}
+
 
 ::-webkit-scrollbar{
     display: none;
 }
 
-.main{
-    width: 96vw;
-    height: 88vh;
-    position: fixed;
-    bottom: 0;
-    left: 2vw;
-}
+@media screen and (min-width: 800px){
 
-.section{
-    width: 100%;
-    height: 0;
-    margin: 0;
-    padding: 0;
-    background-color: red;
-    display: none;
-    transition: 0.2s ease;
-    &.active{
-        display: block;
-
+    #wolf{
+        opacity: 0.1;
     }
-}
 
-.expo{
-    width: 50%;
-    margin: 2vw;
-    h1{
-        font-size: 4vw;
-        font-weight: 500;
-        margin: 0;
+    body{
+        height: 500vh;
     }
-    h2{
+
+    .main{
+        width: 96vw;
+        height: 88vh;
+        position: fixed;
+        bottom: 0;
+        left: 2vw;
+    }
+
+    .expo{
+        width: calc(100vw - 90vh);
+        margin: 2vw;
+        h1{
+            font-size: 4vw;
+            font-weight: 500;
+            margin: 0;
+        }
+        h2{
+            max-width: 70%;
+            font-size: 1.5vw;
+            font-weight: 400;
+            color: rgba(white, 0.8);
+        }
+    }
+
+    button{
+        border: 2px solid white;
+        background-color: rgba(white, 0);
+        border-radius: 1vw;
         font-size: 1.5vw;
-        font-weight: 400;
-        color: rgba(white, 0.8);
-    }
-}
-
-button{
-    border: 2px solid white;
-    background-color: rgba(white, 0);
-    border-radius: 1vw;
-    font-size: 1.5vw;
-    padding: 1vw;
-    transition: 0.2s ease;
-    display: flex;
-    align-items: center;
-    margin-top: 2vw;
-
-    h3{
-        font-weight: 500;
-        font-size: 1.2vw;
-        margin: 0;
+        padding: 1vw;
         transition: 0.2s ease;
-    }
+        display: flex;
+        align-items: center;
+        margin-top: 2vw;
 
-    svg{
-        height: 1.3vw;
-        width: auto;
-        transform: translate(0vw, 0.1vw);
-        transition: 0.3s ease;
-        margin-left: 0.5vw;
-    }
-    .arrow{
-        height: 100%;
-        stroke: white;
-        fill: none;
-        transition: 0.2s ease;
 
-    }
-    &:hover{
-        border: 2px solid $blue;
+        h3{
+            font-weight: 500;
+            font-size: 1.2vw;
+            margin: 0;
+            transition: 0.2s ease;
+        }
+
         svg{
-            transform: translate(0.2vw, 0.1vw);
+            height: 1vw;
+            width: auto;
+            transform: translate(0vw, 0vw);
+            transition: 0.3s ease;
+            margin-left: 0.5vw;
         }
         .arrow{
-            stroke: $blue;
+            height: 100%;
+            stroke: white;
+            stroke-linecap: round;
+            stroke-width: 1.8px;
+            fill: none;
+            transition: 0.2s ease;
+
         }
+        &:hover{
+            border: 2px solid $blue;
+            svg{
+                transform: translate(0.2vw, 0vw);
+            }
+            .arrow{
+                stroke: $blue;
+            }
+            h3{
+                color: $blue;
+            }
+        }
+    }
+
+    .animation{
+        height: 88vh;
+        width: 88vh;
+        position: absolute;
+        top: -2vw;
+        right: 3vw;
+        z-index: 1;
+    }
+
+    .dot{
+        width: 1vw;
+        height: 1vw;
+        border-radius: 1vw;
+        background-color: rgba(white, 0.4);
+        margin-top: 1vw;
+        transition: 0.2s ease;
+        &.active{
+            background-color: rgba(white, 1);
+        }
+        cursor: pointer;
+    }
+
+    .dots{
+        height: 100vh;
+        width: 2vw;
+        position: fixed;
+        right: 1vw;
+        top: 0;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section{
+        width: 100%;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        display: none;
+        transition: 0.2s ease;
+        &.active{
+            display: block;
+        }
+        &.widescreen{
+            width: 55vw;
+            .expo{
+                width: fit-content;
+                margin-left: 13vw;
+            }
+            h1{
+                width: fit-content;
+            }
+            h2{
+                width: fit-content;
+                font-size: 1.2vw;
+            }
+
+            .animation{
+                transform: translate(-13vw, 1.8vw);
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 800px){
+
+    #wolf{
+        opacity: 0.1;
+    }
+
+    .main{
+        margin-top: 35vw;
+    }
+
+    .animation{
+        height: 80vw;
+        width: 80vw;
+        margin: auto;
+        margin-bottom: 5vw;
+    }
+
+    .section{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transition: 0.2s ease;
+
+    }
+
+    .expo{
+        margin: 2vw;
+        h1{
+            font-size: 8vw;
+            font-weight: 600;
+            margin: 0;
+        }
+        h2{
+            width: 70%;
+            font-size: 3vw;
+            font-weight: 400;
+            color: rgba(white, 0.8);
+        }
+    }
+
+    button{
+        border: 2px solid white;
+        background-color: rgba(white, 0);
+        border-radius: 2vw;
+        font-size: 1.5vw;
+        padding: 1.5vw;
+        transition: 0.2s ease;
+        display: flex;
+        align-items: center;
+        margin-top: 4vw;
+
         h3{
-            color: $blue;
+            font-weight: 500;
+            font-size: 3.5vw;
+            margin: 0;
+            transition: 0.2s ease;
+        }
+
+        svg{
+            height: 3vw;
+            width: auto;
+            transform: translate(0vw, 0vw);
+            transition: 0.3s ease;
+            margin-left: 2vw;
+            margin-right: 1vw;
+        }
+        .arrow{
+            height: 100%;
+            stroke-width: 2px;
+            stroke-linecap: round;
+            stroke: white;
+            fill: none;
+            transition: 0.2s ease;
+
+        }
+        &:hover{
+            border: 2px solid $blue;
+            svg{
+                transform: translate(0.5vw, 0vw);
+            }
+            .arrow{
+                stroke: $blue;
+            }
+            h3{
+                color: $blue;
+            }
         }
     }
-}
 
-.dot{
-    width: 1vw;
-    height: 1vw;
-    border-radius: 1vw;
-    background-color: rgba(white, 0.4);
-    margin-top: 1vw;
-    transition: 0.2s ease;
-    &.active{
-        background-color: rgba(white, 1);
+    .dots{
+        display: none;
     }
-    cursor: pointer;
+
 }
-
-.dots{
-    height: 100vh;
-    width: 2vw;
-    position: fixed;
-    right: 1vw;
-    top: 0;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-

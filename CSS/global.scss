@@ -1,5 +1,6 @@
 $background: #00041C;
 $gold: #FFCE00;
+$nav: #2A4182;
 
 a{
     color: white;
@@ -7,6 +8,12 @@ a{
 }
 
 input{
+    &:focus{
+        outline: none;
+    }
+}
+
+textarea{
     &:focus{
         outline: none;
     }
@@ -23,66 +30,238 @@ button{
     color: white;
 }
 
-body{
-    background-color: $background;
-}
-
-
-#wolf{
-    transform: scale(1.8);
-    .wolf-poly{
-        transition: 0.1s ease;
+@media screen and (min-width: 800px){
+    body{
+        background-color: $background;
     }
-}
 
-.background{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    #wolf{
+        width: 80vw;
+        height: 80vh;
+        .wolf-poly{
+            transition: 0.1s ease;
+        }
+        &.widescreen{
+            width: 95vw;
+            height: 95vh;
+        }
+    }
 
-#navbar{
-    height: 5vw;
-    width: 98vw;
-    position: absolute;
-    top: 0;
-    left: 1vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .bubble{
-        height: 5vw;
+    .background{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -5;
         display: flex;
         align-items: center;
-        svg{
-            height: 40%;
-            width: auto;
-            fill: white;
-            transition: 0.2s ease;
-            &:hover{
-                fill: $gold;
-            }
-        }
+        justify-content: center;
+    }
 
-        h1{
-            font-size: 1.5vw;
-            font-weight: 600;
-            margin: 1vw;
-            transition: 0.2s ease;
-            &:hover{
-                color: $gold;
+    #navbar{
+        height: 5vw;
+        width: 100vw;
+        position: fixed;
+        background-color: $background;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .bubble{
+            height: 5vw;
+            display: flex;
+            align-items: center;
+            margin-left: 1vw;
+            margin-right: 1vw;
+            svg{
+                height: 40%;
+                width: auto;
+                fill: white;
+                transition: 0.2s ease;
+                &:hover{
+                    fill: $gold;
+                }
+            }
+
+            h1{
+                font-size: 1.5vw;
+                font-weight: 600;
+                margin: 1vw;
+                transition: 0.2s ease;
+                &:hover{
+                    color: $gold;
+                }
             }
         }
     }
+
+    #dark{
+        display: none;
+    }
+
+    #logo-mobile{
+        display: none;
+    }
 }
 
-#logo-mobile{
-    display: none;
+@media screen and (max-width: 800px){
+    body{
+        background-color: $background;
+    }
+
+    #wolf{
+        transform: scale(1.4);
+        .wolf-poly{
+            transition: 0.1s ease;
+        }
+    }
+
+    .background{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navbar{
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40vw;
+        top: 0;
+        right: 0;
+        z-index: 4;
+        background-color: darken($nav, 20%);
+        box-shadow: -10px 0px 50px 10px rgba(black, 0.4);
+        transition: 0.4s ease;
+
+        .bubble{
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            svg{
+                width: 35vw;
+                height: 15vw;
+                transform: scale(0.6);
+                fill: rgba(white, 0.3);
+                position: absolute;
+                top: 0;
+                left: -3vw;
+            }
+        }
+
+        .navbtn{
+            margin: 1vw;
+            padding: 2vw;
+            text-align: right;
+            width: fit-content;
+            h1{
+                font-size: 5vw;
+                font-weight: 600;
+                margin: 1vw;
+                transition: 0.2s ease;
+                &:hover{
+                    color: $gold;
+                }
+            }
+        }
+
+        &.dorm{
+            right: -40vw;
+            box-shadow: none;
+        }
+    }
+
+    #dark{
+        z-index: 3;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(black, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: 0.4s ease;
+        &.dorm{
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+
+    #navfab{
+        width: 18vw;
+        height: 18vw;
+        background-color: $nav;
+        border-radius: 10vw;
+        position: fixed;
+        bottom: 6vw;
+        right: 6vw;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 5px 30px rgba(black, 0.1);
+        visibility: visible;
+        opacity: 1;
+        transition: 0.2s ease;
+        cursor: pointer;
+
+        div{
+            width: 11vw;
+            height: 1.5vw;
+            margin: 0.9vw;
+            border-radius: 0.5vw;
+            background-color: lighten($nav, 50%);
+            transition: 0.2s ease;
+        }
+        &.dorm{
+            visibility: hidden;
+            opacity: 0;
+        }
+        &:hover{
+            background-color: darken($nav, 5%);
+            div{
+                background-color: lighten($nav, 60%);
+            }
+        }
+    }
+
+    #logo-mobile{
+        display: block;
+        width: 50vw;
+        height: 30vw;
+        left: 25vw;
+        top: 0vw;
+        position: fixed;
+        z-index: -6;
+        opacity: 1;
+        transition: 0.3s ease;
+        visibility: visible;
+        svg{
+            width: 100%;
+            height: 100%;
+            stroke-width: 5px;
+            fill: white;
+        }
+        &.dorm{
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+
 }

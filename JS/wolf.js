@@ -82,28 +82,12 @@ let Wolf =
     </svg>
   </div>
 
-  <div id = 'navfab'>
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
 
-<div id = 'notification' class = 'notification'>
-  <h1> You've Been Signed Up! </h1>
-  <button id = 'ok'>OK</button>
-</div>
 `
 
 Tag('body')[0].innerHTML = Wolf + Tag('body')[0].innerHTML
 
 // Mobile Navigation
-
-const Navfab = Id('navfab');
-const Navbar = Id('navbar')
-
-Navfab.onclick = () => {
-    Navbar.classList.toggle('navbar-out')
-}
 
 // Animated Wolf
 

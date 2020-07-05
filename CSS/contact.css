@@ -1,0 +1,233 @@
+@media screen and (min-width: 800px) {
+  #wolf {
+    opacity: 0.1;
+  }
+  .main {
+    width: 90%;
+    margin: auto;
+    margin-top: 6vw;
+  }
+  .text {
+    font-size: 4vw;
+    font-weight: 500;
+    text-align: center;
+  }
+  .subtext {
+    font-size: 2vw;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  input {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    font-size: 1.2vw;
+    padding: 1vw;
+    border-radius: 0.7vw;
+    margin-bottom: 1vw;
+    width: 60vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  input:hover {
+    border-color: #0074FF;
+  }
+  textarea {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    font-size: 1.2vw;
+    padding: 1vw;
+    width: 60vw;
+    resize: vertical;
+    border-radius: 0.7vw;
+    margin-bottom: 1vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    height: 15vw;
+  }
+  textarea:hover {
+    border-color: #0074FF;
+  }
+  button {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0.7vw;
+    font-size: 1.5vw;
+    padding: 1vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 1.2vw;
+    margin: auto;
+    transition: 0.2s ease;
+  }
+  button svg {
+    height: 1vw;
+    width: auto;
+    -webkit-transform: translate(0vw, 0vw);
+            transform: translate(0vw, 0vw);
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    margin-left: 0.5vw;
+  }
+  button #arrow {
+    height: 100%;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-width: 1.8px;
+    fill: none;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  button:hover {
+    border: 2px solid #0074FF;
+    color: #0074FF;
+  }
+  button:hover svg {
+    -webkit-transform: translate(0.2vw, 0vw);
+            transform: translate(0.2vw, 0vw);
+  }
+  button:hover #arrow {
+    stroke: #0074FF;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #wolf {
+    opacity: 0.1;
+  }
+  .main {
+    width: 90%;
+    margin: auto;
+    margin-top: 30vw;
+  }
+  .text {
+    font-size: 8vw;
+    font-weight: 500;
+    text-align: center;
+  }
+  .subtext {
+    font-size: 6vw;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  input {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    font-size: 4vw;
+    padding: 2vw;
+    border-radius: 2vw;
+    margin-bottom: 2vw;
+    width: 80vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  input:hover {
+    border-color: #0074FF;
+  }
+  textarea {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    font-size: 4vw;
+    padding: 2vw;
+    width: 80vw;
+    resize: vertical;
+    border-radius: 2vw;
+    margin-bottom: 2vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    height: 30vw;
+  }
+  textarea:hover {
+    border-color: #0074FF;
+  }
+  button {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 2vw;
+    padding: 2vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 4vw;
+    margin: auto;
+    transition: 0.2s ease;
+  }
+  button svg {
+    height: 3vw;
+    width: auto;
+    -webkit-transform: translate(0vw, 0vw);
+            transform: translate(0vw, 0vw);
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    margin-left: 2vw;
+  }
+  button #arrow {
+    height: 100%;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-width: 1.8px;
+    fill: none;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  button:hover {
+    border: 2px solid #0074FF;
+    color: #0074FF;
+  }
+  button:hover svg {
+    -webkit-transform: translate(0.2vw, 0vw);
+            transform: translate(0.2vw, 0vw);
+  }
+  button:hover #arrow {
+    stroke: #0074FF;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

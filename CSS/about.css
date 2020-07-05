@@ -1,0 +1,221 @@
+.dev img {
+  border: 1px solid #006840;
+}
+
+.analyst img {
+  border: 1px solid #7C0000;
+}
+
+.marketing img {
+  border: 1px solid #640096;
+}
+
+.exec img {
+  border: 1px solid #534201;
+}
+
+@media screen and (min-width: 800px) {
+  .main {
+    margin-top: 7vw;
+  }
+  .background {
+    position: absolute;
+    top: 0vw;
+  }
+  #wolf {
+    opacity: 0.7;
+    position: absolute;
+    right: 10vw;
+    width: 40vw;
+  }
+  .expo {
+    width: 40vw;
+    margin: 2vw;
+    margin-top: 6vw;
+  }
+  .expo h1 {
+    font-size: 4vw;
+    font-weight: 500;
+    margin: 0;
+    width: 100%;
+  }
+  .expo h2 {
+    font-size: 1.2vw;
+    font-weight: 400;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .section {
+    width: 85vw;
+    height: 80vh;
+    margin: auto;
+    margin-bottom: 7vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section.right .expo {
+    text-align: right;
+  }
+  .section.widescreen {
+    width: 55vw;
+  }
+  .section.widescreen .expo {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 13vw;
+  }
+  .section.widescreen h1 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .section.widescreen h2 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.2vw;
+  }
+  .section.widescreen .animation {
+    -webkit-transform: translate(-13vw, 1.8vw);
+            transform: translate(-13vw, 1.8vw);
+  }
+  .section.right {
+    margin-bottom: -15vw;
+  }
+  .animation {
+    width: 50vw;
+    height: 50vw;
+    -webkit-transform: translate(-10vw, -20vw) scale(1.5);
+            transform: translate(-10vw, -20vw) scale(1.5);
+    z-index: 0;
+  }
+  .text {
+    font-size: 4vw;
+    font-weight: 500;
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .avatars {
+    margin-top: 3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .avatar {
+    width: 20vw;
+    margin: 1vw;
+  }
+  .avatar img {
+    width: 100%;
+    background-color: black;
+    border-radius: 20vw;
+  }
+  .avatar .info {
+    margin-top: 1vw;
+    text-align: center;
+  }
+  .avatar .info h1 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin: 0;
+  }
+  .avatar .info h2 {
+    font-size: 1vw;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 0.5vw;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .avatar.mini {
+    width: 15vw;
+  }
+  .avatar.mini h1 {
+    font-size: 1.4vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #wolf {
+    opacity: 0.1;
+    display: none;
+  }
+  .main {
+    margin-top: 35vw;
+  }
+  .section {
+    text-align: center;
+  }
+  .section h1 {
+    font-size: 8vw;
+    font-weight: 600;
+  }
+  .section h2 {
+    font-size: 4vw;
+    font-weight: 400;
+    width: 90%;
+    color: rgba(255, 255, 255, 0.8);
+    margin: auto;
+  }
+  .animation {
+    height: 60vw;
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+  .text {
+    text-align: center;
+    margin-top: 10vw;
+    font-size: 8vw;
+    font-weight: 600;
+  }
+  .avatars {
+    margin-top: 10vw;
+  }
+  .avatar {
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 5vw;
+  }
+  .avatar img {
+    width: 100%;
+    background-color: black;
+    border-radius: 100vw;
+  }
+  .avatar .info {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    text-align: center;
+  }
+  .avatar .info h1 {
+    font-size: 5vw;
+    font-weight: 600;
+    margin: 0;
+  }
+  .avatar .info h2 {
+    font-size: 4vw;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 1vw;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .avatar.mini {
+    width: 65vw;
+  }
+  .avatar.mini .info {
+    margin-top: 4vw;
+  }
+  .avatar.mini h2 {
+    font-size: 3vw;
+  }
+}
+/*# sourceMappingURL=about.css.map */

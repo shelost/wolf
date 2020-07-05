@@ -1,0 +1,221 @@
+$blue: #0074FF;
+$background: #00041C;
+$gold: #FFCE00;
+$nav: #2A4182;
+
+@media screen and (min-width: 800px){
+
+    #wolf{
+        opacity: 0.1;
+    }
+
+    .main{
+        width: 90%;
+        margin: auto;
+        margin-top: 6vw;
+    }
+
+    .text{
+        font-size: 4vw;
+        font-weight: 500;
+        text-align: center;
+    }
+
+
+    .subtext{
+        font-size: 2vw;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input{
+        background-color: rgba(white, 0);
+        border: 2px solid white;
+        font-size: 1.2vw;
+        padding: 1vw;
+        border-radius: 0.7vw;
+        margin-bottom: 1vw;
+        width: 60vw;
+        transition: 0.2s ease;
+        &:hover{
+            border-color: $blue;
+        }
+    }
+
+    textarea{
+        background-color: rgba(white, 0);
+        border: 2px solid white;
+        font-size: 1.2vw;
+        padding: 1vw;
+        width: 60vw;
+        resize: vertical;
+        border-radius: 0.7vw;
+        margin-bottom: 1vw;
+        transition: 0.2s ease;
+        height: 15vw;
+        &:hover{
+            border-color: $blue;
+        }
+    }
+
+    button{
+        border: 2px solid white;
+        background-color: rgba(white, 0);
+        border-radius: 0.7vw;
+        font-size: 1.5vw;
+        padding: 1vw;
+        transition: 0.2s ease;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        font-weight: 500;
+        font-size: 1.2vw;
+        margin: auto;
+        transition: 0.2s ease;
+
+        svg{
+            height: 1vw;
+            width: auto;
+            transform: translate(0vw, 0vw);
+            transition: 0.3s ease;
+            margin-left: 0.5vw;
+        }
+        #arrow{
+            height: 100%;
+            stroke: white;
+            stroke-linecap: round;
+            stroke-width: 1.8px;
+            fill: none;
+            transition: 0.2s ease;
+
+        }
+        &:hover{
+            border: 2px solid $blue;
+            color: $blue;
+            svg{
+                transform: translate(0.2vw, 0vw);
+            }
+            #arrow{
+                stroke: $blue;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    #wolf{
+        opacity: 0.1;
+    }
+
+    .main{
+        width: 90%;
+        margin: auto;
+        margin-top: 30vw;
+    }
+
+    .text{
+        font-size: 8vw;
+        font-weight: 500;
+        text-align: center;
+    }
+
+
+    .subtext{
+        font-size: 6vw;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 6vw;
+        margin-bottom: 6vw;
+    }
+
+    form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input{
+        background-color: rgba(white, 0);
+        border: 2px solid white;
+        font-size: 4vw;
+        padding: 2vw;
+        border-radius: 2vw;
+        margin-bottom: 2vw;
+        width: 80vw;
+        transition: 0.2s ease;
+        &:hover{
+            border-color: $blue;
+        }
+    }
+
+    textarea{
+        background-color: rgba(white, 0);
+        border: 2px solid white;
+        font-size: 4vw;
+        padding: 2vw;
+        width: 80vw;
+        resize: vertical;
+        border-radius: 2vw;
+        margin-bottom: 2vw;
+        transition: 0.2s ease;
+        height: 30vw;
+        &:hover{
+            border-color: $blue;
+        }
+    }
+
+    button{
+        border: 2px solid white;
+        background-color: rgba(white, 0);
+        border-radius: 2vw;
+        padding: 2vw;
+        transition: 0.2s ease;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        font-weight: 500;
+        font-size: 4vw;
+        margin: auto;
+        transition: 0.2s ease;
+
+        svg{
+            height: 3vw;
+            width: auto;
+            transform: translate(0vw, 0vw);
+            transition: 0.3s ease;
+            margin-left: 2vw;
+        }
+        #arrow{
+            height: 100%;
+            stroke: white;
+            stroke-linecap: round;
+            stroke-width: 1.8px;
+            fill: none;
+            transition: 0.2s ease;
+
+        }
+        &:hover{
+            border: 2px solid $blue;
+            color: $blue;
+            svg{
+                transform: translate(0.2vw, 0vw);
+            }
+            #arrow{
+                stroke: $blue;
+            }
+        }
+    }
+
+}

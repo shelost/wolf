@@ -1,0 +1,296 @@
+.banner {
+  background-size: cover;
+  cursor: pointer;
+}
+
+.blog-item {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  #wolf {
+    opacity: 0.1;
+  }
+  .blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    width: 95vw;
+    margin: auto;
+  }
+  .featured {
+    width: 95vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    border-radius: 1.4vw;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .featured .banner {
+    width: 50vw;
+    height: 30vw;
+    border-radius: 0.7vw;
+    margin: 1.2vw;
+  }
+  .featured .info {
+    margin-left: 1vw;
+  }
+  .featured .info h1 {
+    font-size: 4.5vw;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 1vw;
+  }
+  .featured .info h2 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    margin: 0;
+  }
+  .featured .info h3 {
+    font-size: 1.5vw;
+    font-weight: 500;
+  }
+  .featured:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .post {
+    width: 28vw;
+    border-radius: 1.4vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    margin: 0.8vw;
+  }
+  .post .banner {
+    height: 20vw;
+    width: 100%;
+    border-radius: 0.5vw;
+  }
+  .post .info {
+    margin-top: 2vw;
+  }
+  .post .info h1 {
+    font-size: 2.3vw;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 1vw;
+  }
+  .post .info h3 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .post .info h3 .date {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .post:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .archived {
+    width: 28vw;
+    border-radius: 1.4vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0.8vw;
+    margin-bottom: 1vw;
+  }
+  .archived .banner {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 0.5vw;
+    background-color: red;
+  }
+  .archived .info {
+    margin-left: 1vw;
+    width: 18vw;
+  }
+  .archived .info h1 {
+    font-size: 2vw;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 1vw;
+  }
+  .archived .info h3 {
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+  }
+  .archived .info h3 .date {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .archived:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .text {
+    font-size: 4vw;
+    font-weight: 500;
+    margin-left: 2vw;
+  }
+  .main {
+    margin-top: 7vw;
+  }
+  .main.widescreen .featured {
+    width: 80vw;
+  }
+  .main.widescreen .featured .banner {
+    width: 30vw;
+    height: 20vw;
+  }
+  .main.widescreen .post {
+    width: 23vw;
+  }
+  .main.widescreen .post .banner {
+    height: 15vw;
+  }
+  .main.widescreen .archived {
+    width: 23vw;
+  }
+  .main.widescreen .archived .banner {
+    height: 7vw;
+    width: 7vw;
+  }
+  .main.widescreen .archived h1 {
+    font-size: 1.5vw;
+  }
+  .main.widescreen .blog {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #wolf {
+    opacity: 0.1;
+  }
+  .main {
+    margin-top: 30vw;
+  }
+  .elem {
+    width: 90vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    border-radius: 3vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding-top: 3vw;
+    margin: auto;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+  }
+  .elem .banner {
+    width: 85vw;
+    height: 50vw;
+    border-radius: 1vw;
+    margin: auto;
+  }
+  .elem .info {
+    width: 85vw;
+    margin: auto;
+    padding-top: 3vw;
+    padding-bottom: 4vw;
+  }
+  .elem .info h1 {
+    font-size: 8vw;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 1vw;
+  }
+  .elem .info h2 {
+    font-size: 4vw;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  .elem .info h3 {
+    font-size: 4vw;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    margin-top: 2vw;
+  }
+  .elem .info h3 .date {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .elem:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .archived {
+    width: 88vw;
+    border-radius: 3vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 3vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+  }
+  .archived .banner {
+    height: 20vw;
+    width: 20vw;
+    border-radius: 1vw;
+    background-color: red;
+  }
+  .archived .info {
+    margin-left: 2vw;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .archived .info h1 {
+    font-size: 5vw;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 1vw;
+  }
+  .archived .info h3 {
+    font-size: 3vw;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+  }
+  .archived .info h3 .date {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .archived:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .text {
+    font-size: 8vw;
+    font-weight: 500;
+    margin-left: 2vw;
+  }
+}
+/*# sourceMappingURL=blog.css.map */

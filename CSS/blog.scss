@@ -1,0 +1,302 @@
+$blue: #0074FF;
+
+
+.banner{
+    background-size: cover;
+    cursor: pointer;
+}
+.blog-item{
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 800px){
+
+    #wolf{
+        opacity: 0.1;
+    }
+
+
+    .blog{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 95vw;
+        margin: auto;
+    }
+
+    .featured{
+        width: 95vw;
+        display: flex;
+        align-items: center;
+        transition: 0.2s ease;
+        border-radius: 1.4vw;
+        background-color: rgba(white, 0.05);
+
+        .banner{
+            width: 50vw;
+            height: 30vw;
+            border-radius: 0.7vw;
+            margin: 1.2vw;
+        }
+
+        .info{
+            margin-left: 1vw;
+            h1{
+                font-size: 4.5vw;
+                font-weight: 600;
+                margin: 0;
+                margin-bottom: 1vw;
+            }
+            h2{
+                font-size: 1.5vw;
+                font-weight: 400;
+                margin: 0;
+
+            }
+            h3{
+                font-size: 1.5vw;
+                font-weight: 500;
+
+            }
+
+        }
+        &:hover{
+            background-color: rgba(white, 0.1);
+        }
+    }
+
+    .post{
+        width: 28vw;
+        border-radius: 1.4vw;
+        background-color: rgba(white, 0.05);
+        padding: 1vw;
+        transition: 0.2s ease;
+        margin: 0.8vw;
+        .banner{
+            height: 20vw;
+            width: 100%;
+            border-radius: 0.5vw;
+        }
+        .info{
+            margin-top: 2vw;
+            h1{
+                font-size: 2.3vw;
+                font-weight: 600;
+                margin: 0;
+                margin-bottom: 1vw;
+            }
+            h3{
+                font-size: 1.5vw;
+                font-weight: 500;
+                color: rgba(white, 0.9);
+                .date{
+                    font-weight: 400;
+                    color: rgba(white, 0.6);
+                }
+            }
+        }
+        &:hover{
+            background-color: rgba(white, 0.1);
+        }
+    }
+
+
+    .archived{
+        width: 28vw;
+        border-radius: 1.4vw;
+        background-color: rgba(white, 0.05);
+        padding: 1vw;
+        transition: 0.2s ease;
+        display: flex;
+        align-items: center;
+        margin: 0.8vw;
+        margin-bottom: 1vw;
+        .banner{
+            height: 10vw;
+            width: 10vw;
+            border-radius: 0.5vw;
+            background-color: red;
+        }
+        .info{
+            margin-left: 1vw;
+            width: 18vw;
+            h1{
+                font-size: 2vw;
+                font-weight: 600;
+                margin: 0;
+                margin-bottom: 1vw;
+            }
+            h3{
+                font-size: 1.2vw;
+                font-weight: 500;
+                color: rgba(white, 0.9);
+                margin: 0;
+                .date{
+                    font-weight: 400;
+                    color: rgba(white, 0.6);
+                }
+            }
+        }
+        &:hover{
+            background-color: rgba(white, 0.1);
+        }
+    }
+
+
+    .text{
+        font-size: 4vw;
+        font-weight: 500;
+        margin-left: 2vw;
+    }
+
+    .main{
+        margin-top: 7vw;
+        &.widescreen{
+            .featured{
+                width: 80vw;
+                .banner{
+                    width: 30vw;
+                    height: 20vw;
+                }
+            }
+            .post{
+                width: 23vw;
+                .banner{
+                    height: 15vw;
+                }
+            }
+            .archived{
+                width: 23vw;
+                .banner{
+                    height: 7vw;
+                    width: 7vw;
+                }
+                h1{
+                    font-size: 1.5vw;
+                }
+            }
+            .blog{
+                width: 80vw;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    #wolf{
+        opacity: 0.1;
+    }
+
+    .main{
+        margin-top: 30vw;
+    }
+
+    .elem{
+        width: 90vw;
+        transition: 0.2s ease;
+        border-radius: 3vw;
+        background-color: rgba(white, 0.05);
+        padding-top: 3vw;
+        margin: auto;
+        margin-bottom: 3vw;
+        margin-top: 3vw;
+        .banner{
+            width: 85vw;
+            height: 50vw;
+            border-radius: 1vw;
+            margin: auto;
+        }
+
+        .info{
+            width: 85vw;
+            margin: auto;
+            padding-top: 3vw;
+            padding-bottom: 4vw;
+            h1{
+                font-size: 8vw;
+                font-weight: 600;
+                margin: 0;
+                margin-bottom: 1vw;
+            }
+            h2{
+                font-size: 4vw;
+                font-weight: 400;
+                margin: 0;
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+
+            }
+            h3{
+                font-size: 4vw;
+                font-weight: 500;
+                color: rgba(white, 0.9);
+                margin: 0;
+                margin-top: 2vw;
+
+                .date{
+                    font-weight: 400;
+                    color: rgba(white, 0.6);
+                }
+
+            }
+
+        }
+        &:hover{
+            background-color: rgba(white, 0.1);
+        }
+    }
+
+    .archived{
+        width: 88vw;
+        border-radius:3vw;
+        background-color: rgba(white, 0.05);
+        padding: 3vw;
+        transition: 0.2s ease;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 3vw;
+        margin-top: 3vw;
+        .banner{
+            height: 20vw;
+            width: 20vw;
+            border-radius: 1vw;
+            background-color: red;
+        }
+        .info{
+            margin-left: 2vw;
+            flex: 1;
+            h1{
+                font-size: 5vw;
+                font-weight:500;
+                margin: 0;
+                margin-bottom: 1vw;
+            }
+            h3{
+                font-size: 3vw;
+                font-weight: 500;
+                color: rgba(white, 0.9);
+                margin: 0;
+                .date{
+                    font-weight: 400;
+                    color: rgba(white, 0.6);
+                }
+            }
+        }
+        &:hover{
+            background-color: rgba(white, 0.1);
+        }
+    }
+
+
+    .text{
+        font-size: 8vw;
+        font-weight: 500;
+        margin-left: 2vw;
+    }
+
+}

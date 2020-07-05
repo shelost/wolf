@@ -1,0 +1,119 @@
+@media screen and (min-width: 800px) {
+  body {
+    background-color: #EEEEEE;
+    color: black;
+  }
+  #wolf {
+    opacity: 0;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 5vw;
+  }
+  .header {
+    text-align: center;
+    margin: 2vw;
+  }
+  .header h1 {
+    font-size: 4vw;
+    color: black;
+    font-weight: 700;
+    margin: 0;
+  }
+  .header h2 {
+    font-size: 2vw;
+    font-weight: 500;
+    color: black;
+    margin: 1vw;
+  }
+  .header h3 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+  }
+  p {
+    color: black;
+    width: 80%;
+    font-size: 1.3vw;
+    font-weight: 400;
+  }
+  .banner {
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100vw;
+    margin: 2vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: #EEEEEE;
+    color: black;
+  }
+  #wolf {
+    opacity: 0;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 20vw;
+  }
+  .header {
+    text-align: left;
+    margin: 4vw;
+    margin-top: 2vw;
+  }
+  .header h1 {
+    font-size: 11vw;
+    line-height: 11vw;
+    color: black;
+    font-weight: 700;
+  }
+  .header h2 {
+    font-size: 6vw;
+    font-weight: 500;
+    color: black;
+    margin-top: -3vw;
+    margin-bottom: 3vw;
+  }
+  .header h3 {
+    font-size: 5vw;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+  }
+  p {
+    width: 92%;
+    color: black;
+    font-size: 4vw;
+    font-weight: 400;
+  }
+  .banner {
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30vh;
+    width: 100vw;
+    margin-top: -2vw;
+    margin-bottom: 2vw;
+  }
+}
+/*# sourceMappingURL=article.css.map */

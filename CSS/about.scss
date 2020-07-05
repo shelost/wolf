@@ -1,0 +1,235 @@
+.dev{
+    img{
+        border: 1px solid #006840;
+    }
+}
+
+.analyst{
+    img{
+        border: 1px solid #7C0000;
+    }
+}
+
+.marketing{
+    img{
+        border: 1px solid #640096;
+    }
+}
+
+.exec{
+    img{
+        border: 1px solid #534201;
+    }
+}
+
+
+@media screen and (min-width: 800px){
+
+    .main{
+        margin-top: 7vw;
+    }
+
+    .background{
+        position: absolute;
+        top: 0vw;
+    }
+
+    #wolf{
+        opacity: 0.7;
+        position: absolute;
+        right: 10vw;
+        width: 40vw
+    }
+
+    .expo{
+        width: 40vw;
+        margin: 2vw;
+        margin-top: 6vw;
+        h1{
+            font-size: 4vw;
+            font-weight: 500;
+            margin: 0;
+            width: 100%;
+        }
+        h2{
+            font-size: 1.2vw;
+            font-weight: 400;
+            width: 100%;
+            color: rgba(white, 0.8);
+        }
+    }
+
+    .section{
+        width: 85vw;
+        height: 80vh;
+
+        margin: auto;
+        margin-bottom: 7vw;
+        transition: 0.2s ease;
+        display: flex;
+
+        &.right{
+            .expo{
+                text-align: right;
+            }
+        }
+        &.widescreen{
+            width: 55vw;
+            .expo{
+                width: fit-content;
+                margin-left: 13vw;
+            }
+            h1{
+                width: fit-content;
+            }
+            h2{
+                width: fit-content;
+                font-size: 1.2vw;
+            }
+
+            .animation{
+                transform: translate(-13vw, 1.8vw);
+            }
+        }
+        &.right{
+            margin-bottom: -15vw;
+        }
+    }
+
+    .animation{
+        width: 50vw;
+        height: 50vw;
+        transform: translate(-10vw, -20vw) scale(1.5);
+        z-index: 0;
+
+    }
+
+    .text{
+        font-size: 4vw;
+        font-weight: 500;
+        margin: auto;
+        width: fit-content;
+    }
+
+    .avatars{
+        margin-top: 3vw;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .avatar{
+        width: 20vw;
+        margin: 1vw;
+        img{
+            width: 100%;
+            background-color: black;
+            border-radius: 20vw;
+        }
+        .info{
+            margin-top: 1vw;
+            text-align: center;
+            h1{
+                font-size: 1.5vw;
+                font-weight: 600;
+                margin: 0;
+            }
+            h2{
+                font-size: 1vw;
+                font-weight: 400;
+                margin: 0;
+                margin-top: 0.5vw;
+                color: rgba(white, 0.5);
+            }
+        }
+        &.mini{
+            width: 15vw;
+            h1{
+                font-size: 1.4vw;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    #wolf{
+        opacity: 0.1;
+        display: none;
+    }
+
+    .main{
+        margin-top: 35vw;
+    }
+
+    .section{
+        text-align: center;
+        h1{
+            font-size: 8vw;
+            font-weight: 600;
+        }
+        h2{
+            font-size: 4vw;
+            font-weight: 400;
+            width: 90%;
+            color: rgba(white, 0.8);
+            margin: auto;
+        }
+    }
+
+    .animation{
+        height: 60vw;
+        transform: scale(1.6);
+    }
+
+    .text{
+        text-align: center;
+        margin-top: 10vw;
+        font-size: 8vw;
+        font-weight: 600;
+    }
+
+    .avatars{
+        margin-top: 10vw;
+    }
+    .avatar{
+        width: 70vw;
+        margin: auto;
+        margin-bottom: 5vw;
+        img{
+            width: 100%;
+            background-color: black;
+            border-radius: 100vw;
+        }
+        .info{
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            text-align: center;
+            h1{
+                font-size: 5vw;
+                font-weight: 600;
+                margin: 0;
+            }
+            h2{
+                font-size: 4vw;
+                font-weight: 400;
+                margin: 0;
+                margin-top: 1vw;
+                color: rgba(white, 0.5);
+            }
+        }
+        &.mini{
+            width: 65vw;
+            .info{
+                margin-top: 4vw;
+            }
+            h2{
+                font-size: 3vw;
+            }
+
+        }
+
+
+}
+}
