@@ -25,9 +25,7 @@
 
 @media screen and (min-width: 800px){
 
-    .main{
-        margin-top: 7vw;
-    }
+
 
     .background{
         position: absolute;
@@ -38,7 +36,7 @@
         opacity: 0.7;
         position: absolute;
         right: 10vw;
-        width: 40vw
+        width: 40vw;
     }
 
     .expo{
@@ -62,7 +60,6 @@
     .section{
         width: 85vw;
         height: 80vh;
-
         margin: auto;
         margin-bottom: 7vw;
         transition: 0.2s ease;
@@ -73,24 +70,7 @@
                 text-align: right;
             }
         }
-        &.widescreen{
-            width: 55vw;
-            .expo{
-                width: fit-content;
-                margin-left: 13vw;
-            }
-            h1{
-                width: fit-content;
-            }
-            h2{
-                width: fit-content;
-                font-size: 1.2vw;
-            }
 
-            .animation{
-                transform: translate(-13vw, 1.8vw);
-            }
-        }
         &.right{
             margin-bottom: -15vw;
         }
@@ -148,6 +128,26 @@
                 font-size: 1.4vw;
             }
 
+        }
+    }
+    .team{
+        padding-bottom: 5vw;
+    }
+
+    .main{
+        margin-top: 7vw;
+        &.widescreen{
+            .text{
+                margin-top: 10vw;
+            }
+        }
+    }
+
+    #wolf{
+        &.widescreen{
+            width: 40vw;
+            right: 7vw;
+            bottom: -5vw;
         }
     }
 

@@ -15,9 +15,6 @@
 }
 
 @media screen and (min-width: 800px) {
-  .main {
-    margin-top: 7vw;
-  }
   .background {
     position: absolute;
     top: 0vw;
@@ -58,30 +55,6 @@
   }
   .section.right .expo {
     text-align: right;
-  }
-  .section.widescreen {
-    width: 55vw;
-  }
-  .section.widescreen .expo {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-left: 13vw;
-  }
-  .section.widescreen h1 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .section.widescreen h2 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    font-size: 1.2vw;
-  }
-  .section.widescreen .animation {
-    -webkit-transform: translate(-13vw, 1.8vw);
-            transform: translate(-13vw, 1.8vw);
   }
   .section.right {
     margin-bottom: -15vw;
@@ -142,6 +115,20 @@
   }
   .avatar.mini h1 {
     font-size: 1.4vw;
+  }
+  .team {
+    padding-bottom: 5vw;
+  }
+  .main {
+    margin-top: 7vw;
+  }
+  .main.widescreen .text {
+    margin-top: 10vw;
+  }
+  #wolf.widescreen {
+    width: 40vw;
+    right: 7vw;
+    bottom: -5vw;
   }
 }
 

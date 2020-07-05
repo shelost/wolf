@@ -154,6 +154,9 @@
   .main {
     margin-top: 7vw;
   }
+  .main.widescreen .text {
+    margin-left: 10vw;
+  }
   .main.widescreen .featured {
     width: 80vw;
   }

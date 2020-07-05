@@ -5,4 +5,18 @@ var chartAnim = lottie.loadAnimation({
     autoplay: true,
     path: '../JS/JSON/chart.json',
     name: 'chart'
-});r
+});
+
+const ABOUT = Class('main')[0]
+
+const AboutLoop = () => {
+
+    if (window.innerWidth / window.innerHeight >= 2){
+        ABOUT.classList.add('widescreen')
+    }else{
+        ABOUT.classList.remove('widescreen')
+    }
+
+}
+
+setInterval(AboutLoop, 1000/60)

@@ -223,8 +223,8 @@
     color: #0074FF;
   }
   button:hover svg {
-    -webkit-transform: translate(0.2vw, 0vw);
-            transform: translate(0.2vw, 0vw);
+    -webkit-transform: translate(0.5vw, 0vw);
+            transform: translate(0.5vw, 0vw);
   }
   button:hover #arrow {
     stroke: #0074FF;

@@ -1,4 +1,7 @@
 @media screen and (min-width: 800px) {
+  #navbar {
+    background-color: rgba(0, 4, 28, 0);
+  }
   .notification {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -143,6 +146,7 @@
   }
   .page.widescreen .sec {
     width: 25vw;
+    margin-right: 5vw;
   }
   .page.widescreen .sec h1 {
     font-weight: 500;
@@ -335,6 +339,8 @@
     fill: none;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
+    stroke-width: 1.5px;
+    stroke-linecap: round;
   }
   .page .sec button:hover {
     border: 2px solid #0074FF;
