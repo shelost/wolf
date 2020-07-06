@@ -154,6 +154,11 @@
 }
 
 @media screen and (max-width: 800px){
+
+    body{
+        width: 98vw;
+        overflow-x: hidden;
+    }
     #wolf{
         opacity: 0.1;
         display: none;
