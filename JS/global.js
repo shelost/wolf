@@ -3,6 +3,7 @@ const NAVBAR = Id('navbar')
 const DARK = Id('dark')
 const LOGOMOBILE = Id('logo-mobile')
 const WOLF = Id('wolf')
+const MAIN = Class('main')[0]
 
 function Toggle(){
     NAVBAR.classList.toggle('dorm')
@@ -24,8 +25,10 @@ const GlobalLoop = () => {
 
     if (window.innerWidth / window.innerHeight >= 2){
         WOLF.classList.add('widescreen')
+        MAIN.classList.add('widescreen')
     }else{
         WOLF.classList.remove('widescreen')
+        MAIN.classList.remove('widescreen')
     }
 }
 
