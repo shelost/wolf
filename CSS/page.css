@@ -34,6 +34,8 @@
     width: 70%;
     margin: auto;
     margin-bottom: 10vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   #animation {
     width: 50vw;
@@ -53,6 +55,8 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   .elem .expo {
     display: -webkit-box;

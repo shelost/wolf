@@ -31,6 +31,7 @@
         width: 70%;
         margin: auto;
         margin-bottom: 10vw;
+        transition: 0.2s ease;
     }
 
     #animation{
@@ -46,6 +47,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        transition: 0.2s ease;
 
         .expo{
             display: flex;
