@@ -34,12 +34,13 @@ $blue: #0074FF;
       //  border: 2px solid gold;
         h1{
             font-size: 4vw;
+            line-height: 4vw;
             font-weight: 600;
             margin: 0;
         }
         h2{
             max-width: 95%;
-            margin-top: 0.5vw;
+            margin-top: 2vw;
             font-size: 1.3vw;
             line-height: 1.8vw;
             font-weight: 300;
@@ -48,7 +49,7 @@ $blue: #0074FF;
     }
 
     button{
-        border: 2px solid white;
+        border: 1.5px solid white;
         background-color: rgba(white, 0);
         border-radius: 1vw;
         font-size: 1.5vw;
@@ -85,7 +86,7 @@ $blue: #0074FF;
         &:hover{
             border: 2px solid $blue;
             svg{
-                transform: translate(0.2vw, 0vw);
+              transform: translate(0.2vw, 0vw);
             }
             .arrow{
                 stroke: $blue;

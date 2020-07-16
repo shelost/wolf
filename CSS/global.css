@@ -5,14 +5,26 @@ a {
 
 input:focus {
   outline: none;
+  border: none;
 }
 
 textarea:focus {
   outline: none;
 }
 
+button {
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  outline: none;
+  border: none;
+}
+
 button:focus {
   outline: none;
+  border: none;
 }
 
 ::-moz-selection {

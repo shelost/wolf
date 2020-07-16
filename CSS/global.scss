@@ -10,6 +10,7 @@ a{
 input{
     &:focus{
         outline: none;
+        border: none;
     }
 }
 
@@ -20,8 +21,15 @@ textarea{
 }
 
 button{
+    outline: none;
+    border: none;
+    &:hover{
+        outline: none;
+        border: none;
+    }
     &:focus{
         outline: none;
+        border: none;
     }
 }
 

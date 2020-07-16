@@ -27,19 +27,20 @@
   }
   .expo h1 {
     font-size: 4vw;
+    line-height: 4vw;
     font-weight: 600;
     margin: 0;
   }
   .expo h2 {
     max-width: 95%;
-    margin-top: 0.5vw;
+    margin-top: 2vw;
     font-size: 1.3vw;
     line-height: 1.8vw;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);
   }
   button {
-    border: 2px solid white;
+    border: 1.5px solid white;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 1vw;
     font-size: 1.5vw;
