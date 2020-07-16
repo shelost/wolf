@@ -34,7 +34,8 @@
   }
   input {
     background-color: rgba(255, 255, 255, 0);
-    border: 2px solid white;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.7);
     font-size: 1.2vw;
     padding: 1vw;
     border-radius: 0.7vw;
@@ -48,7 +49,7 @@
   }
   textarea {
     background-color: rgba(255, 255, 255, 0);
-    border: 2px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.7);
     font-size: 1.2vw;
     padding: 1vw;
     width: 60vw;
@@ -63,7 +64,7 @@
     border-color: #0074FF;
   }
   button {
-    border: 2px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.7);
     background-color: rgba(255, 255, 255, 0);
     border-radius: 0.7vw;
     font-size: 1.5vw;
@@ -103,7 +104,7 @@
     transition: 0.2s ease;
   }
   button:hover {
-    border: 2px solid #0074FF;
+    border-color: #0074FF;
     color: #0074FF;
   }
   button:hover svg {
@@ -151,9 +152,9 @@
   }
   input {
     background-color: rgba(255, 255, 255, 0);
-    border: 2px solid white;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
     font-size: 4vw;
-    padding: 2vw;
+    padding: 3vw;
     border-radius: 2vw;
     margin-bottom: 2vw;
     width: 80vw;
@@ -165,9 +166,9 @@
   }
   textarea {
     background-color: rgba(255, 255, 255, 0);
-    border: 2px solid white;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
     font-size: 4vw;
-    padding: 2vw;
+    padding: 3vw;
     width: 80vw;
     resize: vertical;
     border-radius: 2vw;
@@ -180,10 +181,10 @@
     border-color: #0074FF;
   }
   button {
-    border: 2px solid white;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
     background-color: rgba(255, 255, 255, 0);
     border-radius: 2vw;
-    padding: 2vw;
+    padding: 3vw;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
     display: -webkit-box;
@@ -219,7 +220,7 @@
     transition: 0.2s ease;
   }
   button:hover {
-    border: 2px solid #0074FF;
+    border-color: #0074FF;
     color: #0074FF;
   }
   button:hover svg {

@@ -3,6 +3,32 @@ $background: #00041C;
 $gold: #FFCE00;
 $nav: #2A4182;
 
+h1{
+    color: black;
+}
+
+h2{
+    color: black;
+}
+
+h3{
+    color: black;
+}
+
+strong{
+    color: black;
+}
+
+em{
+    color: black;
+}
+
+p{
+    color: black;
+    margin: 0;
+
+}
+
 @media screen and (min-width: 800px){
 
     body{
@@ -50,6 +76,7 @@ $nav: #2A4182;
         width: 80%;
         font-size: 1.3vw;
         font-weight: 400;
+        margin-bottom: 1vw;
     }
 
     .banner{
@@ -111,12 +138,14 @@ $nav: #2A4182;
         color: black;
         font-size: 4vw;
         font-weight: 400;
+        margin-top: 2vw;
+        margin-bottom: 3vw;
     }
 
     .banner{
-        background-size: cover;
+        background-size: 100%;
         background-attachment: fixed;
-        height: 30vh;
+        height: 30vw;
         width: 100vw;
         margin-top: -2vw;
         margin-bottom: 2vw;

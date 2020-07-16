@@ -1,0 +1,116 @@
+#wolf{
+    opacity: 0.1;
+}
+
+@media screen and (min-width: 800px){
+
+    .main{
+        margin-top: 7vw;
+    }
+
+    .title{
+        text-align: center;
+        margin: auto;
+        h1{
+            font-size: 5vw;
+            font-weight: 600;
+            margin: 0;
+        }
+        p{
+            font-size: 1.5vw;
+            line-height: 2vw;
+            font-weight: 300;
+            width: 70%;
+            color: rgba(white, 0.7);
+            margin: auto;
+            margin-top: 1vw;
+        }
+    }
+
+    .flex{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10vw;
+    }
+
+    #animation{
+        width: 50vw;
+        height: 50vw;
+        margin: auto;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    .elem{
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .expo{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 2vw;
+            h1{
+                font-size: 3vw;
+                line-height: 3vw;
+                font-weight: 600;
+                margin: 0;
+            }
+            p{
+                font-size: 1.3vw;
+                line-height: 1.7vw;
+                font-weight: 300;
+                margin-top: 1.5vw;
+                width: 80%;
+                color: rgba(white, 0.7);
+            }
+        }
+
+        img{
+            width: 90%;
+            &.u5{
+                transform: translateY(-5vw);
+            }
+        }
+
+        // Sizes
+        &.f6{
+            flex: 6;
+        }
+        &.f4{
+            flex: 4;
+        }
+        &.full{
+            flex: 1;
+            .expo{
+                width: 70%;
+            }
+            img{
+                width: 100%;
+            }
+        }
+
+        // Transforms
+        &.d10{
+            transform: translateY(10vw);
+        }
+        &.u10{
+            transform: translateY(-7vw);
+        }
+
+        // Right
+        &.right{
+            align-items: flex-end;
+            .expo{
+                text-align: right;
+                align-items: flex-end;
+
+            }
+        }
+    }
+}

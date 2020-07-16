@@ -1,3 +1,5 @@
+/*
+
 let blogObject = [
 
     {"title":"Don't Lose Faith","blurb":"By: Hillel Weitzman","tags":[],"image":"https://foreignpolicy.com/wp-content/uploads/2020/04/economy-after-coronavirus-brian-stauffer-illustration-3_2l.jpg","isPublished":true,"_id":"5ebadd21731a3f04b686c298","author":{"fullName":"Michael Grant Warshowsky","_id":"5eba2935c9e191400fe778d4","id":"5eba2935c9e191400fe778d4"},"publishedAt":"2020-05-13T03:19:02.123Z","createdAt":"2020-05-12T17:33:25.519Z","id":"5ebadd21731a3f04b686c298"},
@@ -12,8 +14,9 @@ let blogObject = [
 
 ];
 
+*/
 
-/*
+
 function httpGet(theUrl) {
     var xmlHttp = new XMLHttpRequest()
     xmlHttp.open('GET', theUrl, false);
@@ -29,10 +32,9 @@ if (blogRequest.success) {
 } else {
     alert('failed to load content!')
 }
-*/
 
 
-// let blogObject = blogResponse;
+let blogObject = blogResponse;
 
 var Content = [``, ``, ``]
 

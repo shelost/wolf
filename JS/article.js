@@ -1,4 +1,4 @@
-/*
+
 var POST_ID = window.location.search.substring(4, window.location.search.length)
 
 let post = {};
@@ -19,8 +19,9 @@ if (blogRequest.success) {
 } else {
     alert('failed to load content!');
 }
-*/
 
+
+/*
 let post =
 {
     "title":"Why Now Is The Time To Start Investing",
@@ -60,6 +61,7 @@ let post =
     </p>
     `
 };
+*/
 
 Class('main')[0].innerHTML =
     `

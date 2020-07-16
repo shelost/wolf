@@ -41,7 +41,7 @@ const ACADEMY = Id('academy')
 
 let docHeight, scrollPos, ratio, index;
 
-var arr = [1,1,1,1,1,1]
+var arr = [1,1]
 
 var analysisArr = [0, 0]
 var wolfpackArr = [0, 0]
@@ -56,7 +56,7 @@ const FeaturesLoop = () => {
 
         ratio = scrollPos / docHeight;
 
-        index = Math.floor(ratio * 3.8);
+        index = Math.floor(ratio * 4.5);
 
         for (let i=0; i<Class('section').length; i++){
             let sec = Class('section')[i];
@@ -74,7 +74,7 @@ const FeaturesLoop = () => {
 
 
             dot.onclick = () => {
-                window.scrollTo(0, (i+1)/3.8*docHeight);
+                window.scrollTo(0, (i+1)/5.5*docHeight);
             }
         }
 

@@ -39,7 +39,8 @@ $nav: #2A4182;
 
     input{
         background-color: rgba(white, 0);
-        border: 2px solid white;
+        outline: none;
+        border: 1px solid rgba(white, 0.7);
         font-size: 1.2vw;
         padding: 1vw;
         border-radius: 0.7vw;
@@ -53,7 +54,7 @@ $nav: #2A4182;
 
     textarea{
         background-color: rgba(white, 0);
-        border: 2px solid white;
+        border: 1px solid rgba(white, 0.7);
         font-size: 1.2vw;
         padding: 1vw;
         width: 60vw;
@@ -68,7 +69,7 @@ $nav: #2A4182;
     }
 
     button{
-        border: 2px solid white;
+        border: 1px solid rgba(white, 0.7);
         background-color: rgba(white, 0);
         border-radius: 0.7vw;
         font-size: 1.5vw;
@@ -99,7 +100,7 @@ $nav: #2A4182;
 
         }
         &:hover{
-            border: 2px solid $blue;
+            border-color: $blue;
             color: $blue;
             svg{
                 transform: translate(0.2vw, 0vw);
@@ -148,9 +149,9 @@ $nav: #2A4182;
 
     input{
         background-color: rgba(white, 0);
-        border: 2px solid white;
+        border: 1.5px solid rgba(white, 0.4);
         font-size: 4vw;
-        padding: 2vw;
+        padding: 3vw;
         border-radius: 2vw;
         margin-bottom: 2vw;
         width: 80vw;
@@ -162,9 +163,9 @@ $nav: #2A4182;
 
     textarea{
         background-color: rgba(white, 0);
-        border: 2px solid white;
+        border: 1.5px solid rgba(white, 0.4);
         font-size: 4vw;
-        padding: 2vw;
+        padding: 3vw;
         width: 80vw;
         resize: vertical;
         border-radius: 2vw;
@@ -177,10 +178,10 @@ $nav: #2A4182;
     }
 
     button{
-        border: 2px solid white;
+        border: 1.5px solid rgba(white, 0.4);
         background-color: rgba(white, 0);
         border-radius: 2vw;
-        padding: 2vw;
+        padding: 3vw;
         transition: 0.2s ease;
         display: flex;
         align-items: center;
@@ -207,7 +208,7 @@ $nav: #2A4182;
 
         }
         &:hover{
-            border: 2px solid $blue;
+            border-color: $blue;
             color: $blue;
             svg{
                 transform: translate(0.5vw, 0vw);

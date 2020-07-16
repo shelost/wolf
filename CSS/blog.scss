@@ -5,6 +5,7 @@ $blue: #0074FF;
     background-size: cover;
     cursor: pointer;
 }
+
 .blog-item{
     cursor: pointer;
 }
@@ -16,10 +17,9 @@ $blue: #0074FF;
         opacity: 0.1;
     }
 
-
     .blog{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap;
         justify-content: left;
         width: 95vw;
@@ -46,6 +46,7 @@ $blue: #0074FF;
             h1{
                 font-size: 4.5vw;
                 font-weight: 600;
+                width: 95%;
                 margin: 0;
                 margin-bottom: 1vw;
             }
@@ -195,7 +196,7 @@ $blue: #0074FF;
     }
 
     .main{
-        margin-top: 30vw;
+        margin-top: 35vw;
     }
 
     .elem{
@@ -300,6 +301,7 @@ $blue: #0074FF;
         font-size: 8vw;
         font-weight: 500;
         margin-left: 2vw;
+        text-align: center;
     }
 
 }
