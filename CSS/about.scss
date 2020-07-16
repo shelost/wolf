@@ -53,10 +53,11 @@
             width: 100%;
         }
         h2{
-            font-size: 1.2vw;
-            font-weight: 400;
+            font-size: 1.3vw;
+            line-height: 1.7vw;
+            font-weight: 300;
             width: 100%;
-            color: rgba(white, 0.8);
+            color: rgba(white, 0.6);
         }
     }
 
@@ -183,9 +184,10 @@
         }
         h2{
             font-size: 4vw;
-            font-weight: 400;
-            width: 90%;
-            color: rgba(white, 0.8);
+            line-height: 5vw;
+            font-weight: 300;
+            width: 80%;
+            color: rgba(white, 0.6);
             margin: auto;
         }
     }
@@ -227,7 +229,7 @@
                 font-size: 4vw;
                 font-weight: 400;
                 margin: 0;
-                margin-top: 1vw;
+                margin-top: 0.5vw;
                 color: rgba(white, 0.5);
             }
         }

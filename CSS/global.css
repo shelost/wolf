@@ -5,7 +5,6 @@ a {
 
 input:focus {
   outline: none;
-  border: none;
 }
 
 textarea:focus {
@@ -13,11 +12,6 @@ textarea:focus {
 }
 
 button {
-  outline: none;
-  border: none;
-}
-
-button:hover {
   outline: none;
   border: none;
 }
@@ -241,7 +235,7 @@ button:focus {
   }
   #navbar .navbtn h1 {
     font-size: 5vw;
-    font-weight: 600;
+    font-weight: 500;
     margin: 1vw;
     color: white;
     -webkit-transition: 0.2s ease;
