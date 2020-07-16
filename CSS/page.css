@@ -3,9 +3,6 @@
 }
 
 @media screen and (min-width: 800px) {
-  .main {
-    margin-top: 7vw;
-  }
   .title {
     text-align: center;
     margin: auto;
@@ -130,6 +127,32 @@
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+  .main {
+    margin-top: 7vw;
+  }
+  .main.widescreen .title h1 {
+    font-size: 4vw;
+  }
+  .main.widescreen .title p {
+    font-size: 1.3vw;
+    line-height: 1.7vw;
+    width: 50%;
+  }
+  .main.widescreen .flex {
+    width: 60%;
+  }
+  .main.widescreen .flex .elem {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  .main.widescreen .flex .elem .expo h1 {
+    font-size: 2vw;
+    line-height: 2vw;
+  }
+  .main.widescreen .flex .elem .expo p {
+    font-size: 1vw;
+    line-height: 1.3vw;
   }
 }
 /*# sourceMappingURL=page.css.map */
