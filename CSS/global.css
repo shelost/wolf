@@ -125,6 +125,7 @@ button:focus {
     margin: 1vw;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
+    color: white;
   }
   #navbar .bubble h1:hover {
     color: #FFCE00;
@@ -230,6 +231,7 @@ button:focus {
     font-size: 5vw;
     font-weight: 600;
     margin: 1vw;
+    color: white;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
   }

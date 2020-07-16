@@ -198,11 +198,12 @@ $blue: #0074FF;
             margin-bottom: 2vw;
         }
         h2{
-            width: 70%;
+            width: 90%;
             margin: auto;
-            font-size: 3vw;
-            font-weight: 400;
-            color: rgba(white, 0.8);
+            font-size: 4vw;
+            line-height: 5vw;
+            font-weight: 300;
+            color: rgba(white, 0.6);
         }
     }
 
@@ -215,6 +216,7 @@ $blue: #0074FF;
         transition: 0.2s ease;
         display: flex;
         align-items: center;
+        margin: auto;
         margin-top: 4vw;
 
         h3{

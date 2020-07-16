@@ -202,11 +202,12 @@
     margin-bottom: 2vw;
   }
   .expo h2 {
-    width: 70%;
+    width: 90%;
     margin: auto;
-    font-size: 3vw;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 4vw;
+    line-height: 5vw;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.6);
   }
   button {
     border: 2px solid white;
@@ -222,6 +223,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: auto;
     margin-top: 4vw;
   }
   button h3 {
