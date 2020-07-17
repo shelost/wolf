@@ -79,3 +79,32 @@ let Nav = `
 `
 
 Tag('body')[0].innerHTML = Nav + Tag('body')[0].innerHTML
+
+
+const SubpageLoop = () => {
+
+    for (let i=0; i<Class('right').length; i++){
+        let elem = Class('right')[i]
+
+        let expo = elem.firstElementChild
+        let img = elem.lastElementChild
+
+        let expoHeight = expo.getBoundingClientRect().height
+        let imgHeight = img.getBoundingClientRect().height
+
+        if (window.innerWidth < 800){
+
+            expo.style.transform = `translateY(${imgHeight}px)`
+            img.style.transform = `translateY(${-expoHeight-30}px)`
+
+        }else{
+            expo.style.transform = ``
+            img.style.transform = ``
+
+        }
+
+
+    }
+}
+
+setInterval(SubpageLoop, 1000/60)
