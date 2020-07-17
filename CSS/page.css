@@ -171,6 +171,15 @@
     margin-top: 7vw;
     padding-bottom: 7vw;
   }
+  .main.widescreen .title h1 {
+    font-size: 4vw;
+  }
+  .main.widescreen #animation {
+    width: 30vw;
+    height: 30vw;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+  }
   .main.widescreen .elem {
     width: 60vw;
     height: 20vw;

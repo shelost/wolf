@@ -158,6 +158,17 @@
         margin-top: 7vw;
         padding-bottom: 7vw;
         &.widescreen{
+            .title{
+                h1{
+                    font-size: 4vw;
+                }
+            }
+            #animation{
+                width: 30vw;
+                height: 30vw;
+                margin-top: 2vw;
+                margin-bottom: 5vw;
+            }
             .elem{
                 width: 60vw;
                 height: 20vw;
